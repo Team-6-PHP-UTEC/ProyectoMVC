@@ -5,7 +5,7 @@
             <i class="far fa-times-circle show-nav-lateral"></i>
             <img src="<?php echo SERVERURL; ?>vistas/assets/avatar/Avatar.png" class="img-fluid" alt="Avatar">
             <figcaption class="roboto-medium text-center">
-                Carlos Alfaro <br><small class="roboto-condensed-light">Web Developer</small>
+                Company X <br><small class="roboto-condensed-light">Activos Fijos</small>
             </figcaption>
         </figure>
         <div class="full-box nav-lateral-bar"></div>
@@ -85,6 +85,15 @@
                     <a href="company.html"><i class="fas fa-store-alt fa-fw"></i> &nbsp; Empresa</a>
                 </li>
             </ul>
+        </nav>
+        <br>
+        <nav class="full-box navbar-info">
+        <a href="#" class="btn-exit-system">
+            <i class="fas fa-power-off"></i>
+        </a>
+        <a href="user-update.html">
+            <i class="fas fa-user-cog"></i>
+        </a>
         </nav>
     </div>
 </section>

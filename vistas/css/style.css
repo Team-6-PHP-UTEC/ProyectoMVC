@@ -263,7 +263,9 @@ table form{
 .nav-lateral-content{
 	max-width: 300px;
 	height: 100%;
-	background-color: rgba(36, 41, 46, .8);
+	/*background-color: rgba(36, 41, 46, .8);*/
+	/* Fondo de relleno del menu lateral */
+	background-color: #FFF;
 }
 .nav-lateral-bar{
 	height: 3px;
@@ -284,7 +286,8 @@ table form{
 }
 .nav-lateral-avatar figcaption{
 	margin-top: 20px;
-	color: #FFF;
+	/*color de texto de nombre empresa y sistema*/
+	color: #000000;
 }
 .nav-lateral-menu{
 	height: auto;
@@ -304,7 +307,8 @@ table form{
 	height: 45px;
 	line-height: 45px;
 	text-decoration: none;
-	color: #FFF;
+	/*color de texto desde menu Dashboard hasta Empresa*/
+	color: #000000;
 	font-size: 17px;
 	box-sizing: border-box;
 	padding-left: 20px;
@@ -315,7 +319,8 @@ table form{
 	background-color: var(--color-three);
 }
 .nav-lateral-menu ul li a:hover{
-	color: #fff;
+	/*color secundario de texto al poner puntero sobre él*/
+	color: #008080;
 	background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, .1) 50%, transparent);
 }
 .nav-lateral-menu ul li ul{
