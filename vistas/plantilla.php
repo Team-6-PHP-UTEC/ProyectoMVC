@@ -9,7 +9,19 @@
     ?>
 </head>
 <body>
-	
+    <?php
+        $peticionAjax=false;
+        require_once "./controladores/VistasControlador.php";
+        $IV = new VistasControldor();
+
+        $vistas=$IV->obteneVistasControlador();
+
+        if($vistas=="login" || $vistas=="404"){
+            require_once "./vistas/contenidos/".$vistas."-view.php";
+        }
+        else{
+        
+    ?>
 	<!-- Main container -->
 	<main class="full-box main-container">
 		<!-- Nav lateral -->
@@ -21,10 +33,13 @@
 		<section class="full-box page-content">
         <?php
             include "./vistas/inc/NavBar.php";
+
+            include $vistas;
         ?>
 		</section>
 	</main>
     <?php
+        } //cierre de else
         include "./vistas/inc/Script.php";
     ?>
 </body>
