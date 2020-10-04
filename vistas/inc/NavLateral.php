@@ -3,7 +3,7 @@
     <div class="full-box nav-lateral-content">
         <figure class="full-box nav-lateral-avatar">
             <i class="far fa-times-circle show-nav-lateral"></i>
-            <img src="<?php echo SERVERURL; ?>vistas/assets/avatar/Avatar.png" class="img-fluid" alt="Avatar">
+            <img src="<?php echo SERVERURL; ?>vistas/assets/avatar/logo.jpeg" class="img-fluid" alt="Avatar">
             <figcaption class="roboto-medium text-center">
                 Company X <br><small class="roboto-condensed-light">Activos Fijos</small>
             </figcaption>
