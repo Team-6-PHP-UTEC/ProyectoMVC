@@ -8,9 +8,10 @@
 
 //MySQL Server
 const JDBC_URL = "jdbc:mysql://localhost:3306/test?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
+const SERVER = "127.0.0.1";
+const USER = "root";
+const PASSWORD = "";
 const DB = "pruebamvc";
-const JDBC_USER = "root";
-const JDBC_PASSWORD = "";
 
 //configuracion de encriptacion
 const METHOD="AES-256-CBC";
