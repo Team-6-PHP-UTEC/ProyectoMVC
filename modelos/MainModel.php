@@ -12,25 +12,35 @@ class MainModel{
 
     /* --- Funcion conectar a BD --- */
     protected static function conectar(){
-        /*$conexion = new PDO(SGBD, USER, PASS);
-        $mysqli->exec("SET CHARACTER SET utf8");
-        return $conexion;*/
+        $conexion = new PDO(SGBD, USER, PASSWORD);
+        $conexion->exec("SET CHARACTER SET utf8");
+        return $conexion;
 
-        $mysqli = new mysqli(SERVER, USER, PASSWORD, DB, 3306);
+        //$conexion = new mysqli(SERVER, USER, PASSWORD, DB);
+        
+
+        /*$mysqli = new mysqli(SERVER, USER, PASSWORD, DB, 3306);
         if ($mysqli->connect_errno) {
             echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
         }
 
         echo $mysqli->host_info . "\n";
 
-        return $mysqli;
+        return $mysqli; */
+
+        //return $conexion;
     }
 
     /* --- Funcion ejecutar consultas --- */
     protected static function ejecutarConsulta($consulta){
-        /*$sql=self::conectar()->prepare();
+        $sql=self::conectar()->prepare($consulta);
         $sql->execute();
-        return $sql;*/
+        return $sql;
+
+        //$sentencia = $mysqli->prepare("INSERT INTO test(id) VALUES (?)");
+
+        //$sql = mysqli_init(self::conectar($conexion);
+        
     }
 
     /* --- Seguridad encriptar cadenas --- */
